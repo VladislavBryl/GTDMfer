@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta tages alwats come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+    <!--Page Title-->
+    <title>GTDMFer</title>
+
+    <!--Import Bootstrap & css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/styles.css">
+
+    <script src="includes/pageParts.js"> </script>
+    <script src="includes/getRoutine.js"> </script>
+
+    <style> 
+        div {border: 0px solid black;} 
+        h1#date {text-align: right;}
+        div.twelfth {margin: 0px; border: 1px solid black;}
+    </style>
+
+</head>
+
+<body>
+    <div id="thisHeader"></div>
+<script>
+    let thisHeader = getHeader("today");
+    document.getElementById("thisHeader").innerHTML = thisHeader;
+
+</script>
+
+
+<div class="containter">
+    <div class="row align-items-center" style="border: 0px; margin:0;padding:0;">
+        <div class="col-1 twelfth">1</div>
+        <div class="col-1 twelfth">2</div>
+        <div class="col-1 twelfth">3</div>
+        <div class="col-1 twelfth">4</div>
+        <div class="col-1 twelfth">5</div>
+        <div class="col-1 twelfth">6</div>
+        <div class="col-1 twelfth">7</div>
+        <div class="col-1 twelfth">8</div>
+        <div class="col-1 twelfth">9</div>
+        <div class="col-1 twelfth">10</div>
+        <div class="col-1 twelfth">11</div>
+        <div class="col-1 twelfth">12</div>
+    </div>
+</div>
+
+
+
+<div class="container" id="routineContainer">
+
+
+    <script>
+    let thisRoutine = testing();
+    document.getElementById("routineContainer").innerHTML = thisRoutine;
+    </script>
+    <div class="row row-routine align-items-center">
+        <div class="col-12">
+            <h3>Wake Up</h3>
+        </div>
+    </div>
+
+    <div class="row row-routine align-items-center">
+        <div class="col-12">
+            <h3>Brush Teeth</h3>
+        </div>
+    </div>
+
+    <div class="row row-routine align-items-center">
+        <div class="col-12">
+            <h3>Shower</h3>
+        </div>
+    </div>
+
+    <div class="row row-routine align-items-center">
+        <div class="col-12">
+            <h3>Have Coffee</h3>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="thisFooter"></div>
+
+<script>
+    let thisFooter = getFooter();
+    document.getElementById("thisFooter").innerHTML = thisFooter;
+</script>
+
+<!--Include jQuery, Popper.js, and Bootstrap scripts (in that order due to dependencies) -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<!--<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
